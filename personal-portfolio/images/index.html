@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a  href="#header">Home</a></li>
+                    <li><a  href="#about">About</a></li>
+                    <li><a  href="#services">Services</a></li>
+                    <li><a  href="#portfolio">Portfolio</a></li>
+                    <li><a  href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+               <p>Aspiring Data Analyst | Python | Excel | SQL </p>
+               <h1>Hi, I'm <span>Somya Jain</span><br>from India</h1>
+            </div>
+        
+        </div>
+<!----------------about---------------------->
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am an aspiring Data Analyst from India with a strong interest in working with data and technology. 
+                        I have hands-on experience in Excel, SQL, Python, and Power BI, and I enjoy analyzing data to find 
+                        meaningful insights. I am constantly learning and building projects to enhance my skills in data
+                         visualization and reporting.</p>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Power BI</span><br>Interactive Dashboards & Reports</li>
+                                <li><span>Python</span><br>Pandas, NumPy, Matplotlib</li>
+                                <li><span>SQL</span><br>Data Querying, Joins, Aggregations</li>
+                            </ul>
+                         </div>
+                          <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2025 - Current</span><br>FJWP training from Anudip Foundation</li>
+                                <li><span>(Pandas, Matplotlib)</span><br>Built Data Analysis projects using Python</li>
+                                <li><span>Power BI</span><br>Created Dashboards in Power BI using real-world datasets</li>
+                            </ul>
+                         </div>
+                          <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2025</span><br>BCA from CCS University</li>
+                                <li><span>2025</span><br>FJWP Training ata Anudip Foundation</li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------services------------------>
+   
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+             <div>
+                <h2>Data Cleaning & Analysis</h2>
+                <p>Organize, clean, and analyze datasets to extract
+                    insights using Excel and Python.This ensures accurate and reliable data for analysis</p>
+                   <a href="#">Learn more</a>
+             </div>
+              <div>
+                <h2>Dashboard Design</h2>
+                <p>Create interactive dashboards in Power BI for visualizing
+                    key metrics and trends.I help businesses or users make data-driven decisions</p>
+                   <a href="#">Learn more</a>
+             </div>
+              <div>
+                <h2>SQL Querying</h2>
+                <p>Write SQL queries to extract and manage data from relational 
+                   databases.This helps manage and analyze large datasets easily.</p>
+                   <a href="#">Learn more</a>
+             </div>
+             </div>
+            </div>
+        </div>
+    
+<!-----------------portfolio------------------>
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      
+      <div class="work">
+        <img src="work-1.png">
+        <div class="layer">
+          <h3>Sales Dashboard</h3>
+          <p>This dashboard visualizes sales data using Power BI to track revenue, top products, and regions.</p>
+           <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      
+      <div class="work">
+        <img src="work-2.png">
+        <div class="layer">
+          <h3>Customer Data Analysis</h3>
+          <p>Used Python and Excel for cleaning customer data and analyzing trends to improve services.</p>
+           <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="work-3.png">
+        <div class="layer">
+          <h3>SQL Data Queries</h3>
+          <p>Created SQL queries to extract sales reports and inventory status from relational databases.</p>
+           <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+           
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <a href="#" class="btn">See More</a>
+</div>
+</div>
+
+<!-----------------Contacts------------------>
+
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+     <h1 class="sub-title">Contact Me</h1>
+     <p><i class="fa-regular fa-paper-plane"></i> contact@example.com</p>
+     <p><i class="fa-solid fa-square-phone"></i> 0987654321</p>
+     <div class="social-icons">
+        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+     </div>
+     <a href="my_resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                 <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+  <p>Copyright &copy; 2025 Somya Jain. All rights reserved.</p>
+</div>
+</div>
+  
+
+    <script>
+
+      var tablinks = document.getElementsByClassName('tab-links');
+      var tabcontents = document.getElementsByClassName('tab-contents');
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+          for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+
+    </script>
+    <script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw1MEKW7yfzsxwWqST298Br-6N3TJH_WaT9QbaZi4hT1O8-adt9ySSmTws1B-n3uudhTA/exec';
+const form = document.querySelector("form");
+
+form.addEventListener("submit", e => {
+  e.preventDefault();
+
+  const formData = {
+    name: form.Name.value,
+    email: form.Email.value,
+    message: form.Message.value
+  };
+
+  fetch(scriptURL, {
+    method: 'POST',
+    body: JSON.stringify(formData)
+  })
+  .then(response => {
+  alert('Message sent successfully!');
+  setTimeout(() => {
+    form.reset();  
+  }, 3000);
+})
+  .catch(error => {
+    alert('Error sending message.');
+    console.error('Error!', error.message);
+  });
+});
+</script>
+
+    
+</body>
+</html>
