@@ -1,0 +1,9 @@
+function doPost(e){
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = JSON.parse(e.postData.contents);
+  sheet.appendRow([data.name, data.email, data.message, new Date()]);
+  return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);
+}
+
+// Web App URL used in HTML form:
+// https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbwLOk2UZ1QKC80tTLc2JCoEbXM-obMspUoahtzk34R8KEaCFxz_UrqPE_bnkQEnHsEPHA/exec/exec
